@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Backbone.js・TodoMVC</title>
+        <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./underscore-min.js"></script>
+        <script type="text/javascript" src="./backbone.js"></script>
+        <script type="text/javascript" src="./todos.js"></script>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <p class="title">todos</p>
+        <table id="todolist">
+            <tr>
+                <th class="check">
+                    <p onclick="allCheck()"></p>
+                </th>
+                <th class="tasks">
+                    <form method="post" class="textform" onsubmit="return false;">
+                        <input type="text"  id="input" placeholder="What needs to be done?" autocomplete="off">
+                    </form>
+                </th>
+                <th class="close">
+                    <p class="closebtn"></p>
+                </th>
+            </tr>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>
